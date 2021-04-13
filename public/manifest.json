@@ -1,0 +1,32 @@
+{
+  "name": "Terrier goes Live",
+  "description": "Permet de savoir quand les membres du Terrier sont en live",
+  "version": "0.0.1",
+  "author": "BlyxxFR",
+  "permissions": [
+    "identity",
+    "notifications",
+    "alarms",
+    "storage",
+    "https://static-cdn.jtvnw.net/jtv_user_pictures/*",
+    "https://api.twitch.tv/*",
+    "https://blyxxfr.github.io/terrier-channels/*"
+  ],
+  "background": {
+    "scripts": [
+      "browser-polyfill.js",
+      "static/js/background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Terrier goes Live",
+    "default_popup": "index.html"
+  },
+  "manifest_version": 2,
+  "icons": {
+    "16": "assets/logo.png",
+    "48": "assets/logo.png",
+    "128": "assets/logo.png"
+  }
+}
